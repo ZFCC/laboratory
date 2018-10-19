@@ -1,9 +1,10 @@
 package com.zky.laboratory.entry;
 
 import javax.persistence.Column;
+import java.io.Serializable;
 import java.util.Date;
 
-public class Teacher {
+public class Teacher implements Serializable {
 
     //教师编号
     @Column(name = "teacher_id")

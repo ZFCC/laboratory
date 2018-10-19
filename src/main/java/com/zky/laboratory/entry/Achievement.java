@@ -1,8 +1,9 @@
 package com.zky.laboratory.entry;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Achievement {
+public class Achievement implements Serializable{
 
     private int articleId;
 
