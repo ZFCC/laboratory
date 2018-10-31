@@ -1,14 +1,19 @@
-package com.zky.laboratory.entry;
+package com.zky.laboratory.controller.DTO;
 
-import javax.persistence.Column;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Teacher implements Serializable {
-
-    //教师编号
-    @Column(name = "teacher_id")
-    private int teacherId;
+/**
+ * Copyright (C), 2002-2018, 苏宁易购电子商务有限公司
+ * FileName: queryTeacherByPageDTO
+ * Author:  18075555
+ * Date: 2018/10/25 16:41.
+ * Description: //描述当前类所属模块
+ * History: //修改记录
+ * <author>      <time>      <version>    <desc>
+ * 修改人姓名             修改时间            版本号                  描述
+ */
+public class QueryTeacherByPageDTO implements Serializable {
 
     //姓名
     private String name;
@@ -33,20 +38,9 @@ public class Teacher implements Serializable {
 
     //学历
     private String education;
-    //单位
+
+    //组织
     private  String organization;
-    //工号
-    private String number;
-
-    private String remark;
-
-    public int getTeacherId() {
-        return teacherId;
-    }
-
-    public void setTeacherId(int teacherId) {
-        this.teacherId = teacherId;
-    }
 
     public String getName() {
         return name;
@@ -120,27 +114,10 @@ public class Teacher implements Serializable {
         this.organization = organization;
     }
 
-    public String getRemark() {
-        return remark;
-    }
-
-    public void setRemark(String remark) {
-        this.remark = remark;
-    }
-
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
     @Override
     public String toString() {
-        return "Teacher{" +
-                "teacherId=" + teacherId +
-                ", name='" + name + '\'' +
+        return "QueryTeacherByPageDTO{" +
+                "name='" + name + '\'' +
                 ", tittle='" + tittle + '\'' +
                 ", sex=" + sex +
                 ", birthday=" + birthday +
@@ -149,8 +126,6 @@ public class Teacher implements Serializable {
                 ", address='" + address + '\'' +
                 ", education='" + education + '\'' +
                 ", organization='" + organization + '\'' +
-                ", number='" + number + '\'' +
-                ", remark='" + remark + '\'' +
                 '}';
     }
 }

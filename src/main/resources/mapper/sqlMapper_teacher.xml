@@ -2,7 +2,6 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.zky.laboratory.dao.TeacherDao">
 
-
     <select id="selectTeacherByName" resultType="com.zky.laboratory.entry.Teacher">
         select * from teacher WHERE name=#{name}
     </select>
@@ -66,7 +65,23 @@
         </if>
         WHERE teacher_id = #{teacherId}
     </update>
-    <select id="selectAll" resultType="com.zky.laboratory.entry.Teacher">
-        SELECT * FROM teacher
+    <select id="selectByPage" resultType="com.zky.laboratory.entry.Teacher">
+        SELECT *
+        FROM teacher t
+        WHERE
+        1=1
+          <if test="name !=null" >
+              AND   t.name =#{name}
+          </if>
+        <if test="subject !=null" >
+            AND   t.subject =#{subject}
+        </if>
+        <if test="education !=null" >
+            AND  t.education =#{education}
+        </if>
+        <if test="organization !=null" >
+            AND t.organizationname =#{organization}
+        </if>
     </select>
+
 </mapper>

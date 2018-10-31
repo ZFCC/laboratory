@@ -1,6 +1,8 @@
 package com.zky.laboratory.dao;
 
 
+import com.zky.laboratory.controller.DTO.QueryByPage;
+import com.zky.laboratory.controller.DTO.QueryTeacherByPageDTO;
 import com.zky.laboratory.entry.Teacher;
 import com.zky.laboratory.service.serviceImpl.QueryParam;
 import com.zky.laboratory.service.serviceImpl.QueryResult;
@@ -21,5 +23,5 @@ public interface TeacherDao {
 
 //    public QueryResult<Teacher> queryTeachersByPage(QueryParam param);
 
-    List<Teacher> selectAll();
+    List<Teacher> selectByPage(QueryTeacherByPageDTO queryTeacherByPageDTO);
 }
