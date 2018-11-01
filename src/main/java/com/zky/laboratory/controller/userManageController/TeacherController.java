@@ -1,4 +1,4 @@
-package com.zky.laboratory.controller;
+package com.zky.laboratory.controller.userManageController;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
@@ -7,18 +7,14 @@ import com.github.pagehelper.PageInfo;
 
 import com.zky.laboratory.Utils.FileUploadUtils;
 import com.zky.laboratory.Utils.StringUtils;
-import com.zky.laboratory.controller.DTO.FileUploadeDTO;
-import com.zky.laboratory.controller.DTO.QueryTeacherByPageDTO;
-import com.zky.laboratory.dao.FileUploadeDao;
+import com.zky.laboratory.controller.dto.FileUploadeDTO;
+import com.zky.laboratory.controller.dto.QueryTeacherByPageDTO;
 import com.zky.laboratory.entry.Teacher;
 import com.zky.laboratory.service.TeacherService;
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.ResourceLoader;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -33,7 +29,7 @@ import java.util.List;
 import java.util.Map;
 
 @Controller
-@RequestMapping("/test")
+@RequestMapping("/teacher")
 public class TeacherController {
     @Resource
     TeacherService teacherService;

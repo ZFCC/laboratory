@@ -1,4 +1,4 @@
-package com.zky.laboratory.controller.DTO;
+package com.zky.laboratory.controller.dto;
 
 import java.io.Serializable;
 

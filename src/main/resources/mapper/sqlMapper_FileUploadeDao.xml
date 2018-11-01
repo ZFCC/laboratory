@@ -16,7 +16,7 @@
         )
     </insert>
 
-    <select id="getPhotoByUserNumber" resultType="com.zky.laboratory.controller.DTO.FileUploadeDTO">
+    <select id="getPhotoByUserNumber" resultType="com.zky.laboratory.controller.dto.FileUploadeDTO">
         SELECT f.path AS filePath
         FROM file_uploade f
         WHERE

@@ -1,6 +1,6 @@
 package com.zky.laboratory.dao;
 
-import com.zky.laboratory.controller.DTO.FileUploadeDTO;
+import com.zky.laboratory.controller.dto.FileUploadeDTO;
 import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 

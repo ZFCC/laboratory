@@ -2,8 +2,8 @@ package com.zky.laboratory.service.serviceImpl;
 
 
 import com.zky.laboratory.Utils.StringUtils;
-import com.zky.laboratory.controller.DTO.FileUploadeDTO;
-import com.zky.laboratory.controller.DTO.QueryTeacherByPageDTO;
+import com.zky.laboratory.controller.dto.FileUploadeDTO;
+import com.zky.laboratory.controller.dto.QueryTeacherByPageDTO;
 import com.zky.laboratory.dao.FileUploadeDao;
 import com.zky.laboratory.dao.TeacherDao;
 import com.zky.laboratory.entry.Teacher;
