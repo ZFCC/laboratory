@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * Copyright (C), 2002-2018, 苏宁易购电子商务有限公司
+ * Copyright (C), 2002-2018,
  * FileName: FileUploadUtils
  * Author:  18075555
  * Date: 2018/10/30 20:00.
@@ -35,15 +35,17 @@ public class FileUploadUtils {
         return StringUtils.getUUID()+ FileUploadUtils.getSuffix(fileOriginName);
     }
 
-    /**
-     * [功能描述]：上传文件到本地硬盘
-     * 创建人：18075555
-     * 创建时间：2018/10/31  16:57.
-     * 修改记录：工号(姓名)-修改内容
-     *
-     * @param [相关类/方法](可选)
-     * @return [产品/模块版本](可选)
-     */
+  /**
+  * 
+  * 功能描述: <br>
+  * [功能描述]：保存文件到本地硬盘
+  * [应用场景]：	  
+  * 创建人：18075555
+  * 创建时间：2018/11/1 18:01
+  * 修改记录：工号(姓名)-修改内容
+  * @see [相关类/方法](可选)
+  * @since [产品/模块版本](可选)
+  */
     public static String uploadPhoto(MultipartFile file, String path, String fileName){
 
         //加UUID的路径

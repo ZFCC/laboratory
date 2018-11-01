@@ -41,11 +41,11 @@ public class TeacherController {
     @Resource
     ResourceLoader resourceLoader1;
 
-    private final ResourceLoader resourceLoader;
+   /* private final ResourceLoader resourceLoader;
     @Autowired
     public TeacherController(ResourceLoader resourceLoader) {
         this.resourceLoader = resourceLoader;
-    }
+    }*/
     @RequestMapping("/insert")
     @ResponseBody
     public int insertTeacher(HttpServletRequest request){
@@ -152,7 +152,7 @@ public class TeacherController {
             ResponseEntity.ok(null);
         }
         //由于是读取本机的文件，file一定要加上
-        return ResponseEntity.ok(resourceLoader.getResource("file:"+fileUploadeDTO.getFilePath()));
+        return ResponseEntity.ok(resourceLoader1.getResource("file:"+fileUploadeDTO.getFilePath()));
     }
 
     public static void main(String ags[]){

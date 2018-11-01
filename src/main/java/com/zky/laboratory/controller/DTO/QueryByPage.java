@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Map;
 
 /**
- * Copyright (C), 2002-2018, 苏宁易购电子商务有限公司
+ * Copyright (C), 2002-2018,
  * FileName: QueryByPageDTO
  * Author:  18075555
  * Date: 2018/10/25 16:46.

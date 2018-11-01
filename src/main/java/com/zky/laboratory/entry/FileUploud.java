@@ -4,7 +4,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * Copyright (C), 2002-2018, 苏宁易购电子商务有限公司
+ * Copyright (C), 2002-2018,
  * FileName: FileUploud
  * Author:  18075555
  * Date: 2018/10/31 14:34.

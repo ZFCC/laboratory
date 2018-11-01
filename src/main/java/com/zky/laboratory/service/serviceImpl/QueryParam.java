@@ -1,5 +1,5 @@
 /*
- * Copyright (C), 2002-2015, 苏宁易购电子商务有限公司
+ * Copyright (C), 2002-2018
  * FileName: QueryParam.java
  * Author:   13040569
  * Date:     2015年6月19日 下午7:21:03

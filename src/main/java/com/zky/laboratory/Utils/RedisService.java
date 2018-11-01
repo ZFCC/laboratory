@@ -10,7 +10,7 @@ import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 /**
- * Copyright (C), 2002-2018, 苏宁易购电子商务有限公司
+ * Copyright (C), 2002-2018,
  * FileName: redisServcie
  * Author:  18075555
  * Date: 2018/10/18 15:40.

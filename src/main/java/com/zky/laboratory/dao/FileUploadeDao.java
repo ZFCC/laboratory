@@ -5,7 +5,7 @@ import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 /**
- * Copyright (C), 2002-2018, 苏宁易购电子商务有限公司
+ * Copyright (C), 2002-2018,
  * FileName: FileUploadeDao
  * Author:  18075555
  * Date: 2018/10/31 14:57.
