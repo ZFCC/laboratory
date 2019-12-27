@@ -1,7 +1,6 @@
 package com.zky.laboratory.service;
 
 import com.zky.laboratory.controller.dto.FileUploadeDTO;
-import com.zky.laboratory.controller.dto.QueryTeacherByPageDTO;
 import com.zky.laboratory.entry.Teacher;
 
 import java.util.List;
@@ -13,7 +12,7 @@ public interface TeacherService {
 
     public  int updateTeacher(Teacher teacher);
 
-    public List<Teacher> selectByPage(QueryTeacherByPageDTO queryTeacherByPageDTO);
+    public List<Teacher> selectByPage(com.zky.laboratory.controller.DTO.QueryTeacherByPageDTO queryTeacherByPageDTO);
 
     public int photoUploade(FileUploadeDTO fileUploadeDTO);
 
